@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.top_container {
+.rectangle_container {
   min-height: 30rem;
   height: 100%;
   max-width: 100%;
@@ -17,7 +17,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4.25rem;
+  padding: 2.31rem 1rem 4.25rem 1rem;
 }
 .header a {
   color: #fff;
@@ -27,7 +27,6 @@
   letter-spacing: -0.16px;
   font-family: "Manrope", sans-serif;
   text-decoration: none;
-  padding: 2rem 1rem 0 0;
 }
 .header a::after {
   content: "";
@@ -79,19 +78,15 @@
   position: absolute;
   bottom: -85px;
   right: 35px;
-  width: 18.25rem;
-  height: auto;
 }
 .hero_image_container .hero_image {
-  width: 18.25rem;
+  max-width: 18.25rem;
+  width: 100%;
   height: auto;
-}
-
-picture {
-  position: relative;
 }
 
 .founder_picture {
+  position: relative;
   max-width: 100%;
 }
 
@@ -116,7 +111,7 @@ picture {
   justify-content: center;
   align-items: center;
 }
-.info_container h2 {
+.info_container span {
   color: #24053E;
   font-size: 1.25rem;
   border: 1px solid #584D62;
