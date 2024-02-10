@@ -7,20 +7,11 @@
     box-sizing: border-box;
 }
 
-.rectangle_container {
-    min-height: 30rem;
-    height: 100%;
-    max-width: 100%;
-    width: 100%;
-    position: relative;
-    background: url(/images/dark-purple-rectangle.svg) no-repeat $color-ghostWhite;
-    background-size: cover;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 2.31rem 1rem 4.25rem 1rem;
+    padding: 2.31rem 1rem 0 1rem;
+    background-color: $color-darkPurple;
 
     & a {
         color: $color-white;
@@ -47,8 +38,13 @@
 .top_content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    min-height: 30rem;
+    height: 100%;
+    padding-top: 4.25rem;
+    position: relative;
+    background: url(/images/dark-purple-rectangle.svg) no-repeat $color-ghostWhite;
+    background-size: cover;
 
     & h1 {
         font-family: $Fraunces-family;
@@ -81,17 +77,17 @@
     text-decoration: none;
 }
 
-.hero_image_container {
-    position: absolute;
-    bottom: -85px;
-    right: 35px;
 
-    & .hero_image {
-        max-width: 18.25rem;
-        width: 100%;
-        height: auto;
-    }
+.hero_image {
+    position: absolute;
+    max-width: 18.25rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    transform: translate(0, 50%);
 }
+
 
 .founder_picture {
     position: relative;
